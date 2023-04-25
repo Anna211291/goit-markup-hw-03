@@ -58,7 +58,8 @@ img {
   gap: 24px;
 }
 .about-list {
-  flex-basis: calc: (100% - var(--indent) * var(--items)-1) / var(--items);}
+  flex-basis: calc((100% - var(--indent) * (var(--items) -1)) / var(--items));
+}
 .link,
 .contacts {
   text-decoration: none;
@@ -165,7 +166,7 @@ button {
 .hero {
   background-color: var(--color-navy-blue);
   height: 600px;
-    padding: 188px 0;
+  padding: 188px 0;
 }
 
 .main-title {
@@ -209,9 +210,7 @@ button {
   padding: 120px 0;
 }
 /* Gallery section styles */
-.gallery-images {
 
-}
 /* Team section styles */
 .team-section {
   background-color: var(--color-cloud);
@@ -219,11 +218,10 @@ button {
 }
 
 .card-set {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
   row-gap: 48px;
-  
 }
 .team-list {
   background-color: var(--color-white);
@@ -231,25 +229,24 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   padding: 0px 0px 32px;
-flex-basis: calc: (100% - var(--indent) * var(--items)-1) / var(--items);
-
+  flex-basis: calc((100% - var(--indent) * (var(--items) -1)) / var(--items));
 }
- 
+
 .team-information {
-padding: 32px 16px;
+  padding: 32px 16px;
   display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 /* /* Portfolio navigate styles */
 .buttons-group {
-   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-margin-bottom: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
 }
 .btn {
   background: var(--color-cloud);
@@ -263,11 +260,10 @@ margin-bottom: 72px;
   letter-spacing: 0.04em;
 
   color: var(--color-iris);
-  
-padding: 12px 24px;
-border: 1px solid var(--color-cornflower);
-border-radius: 4px;
 
+  padding: 12px 24px;
+  border: 1px solid var(--color-cornflower);
+  border-radius: 4px;
 }
 .btn:hover,
 .btn:focus {
@@ -298,14 +294,13 @@ border-radius: 4px;
 }
 .portfolio-card {
   background: var(--color-white);
-  flex-basis: calc: (100% - var(--indent) * var(--items)-1) / var(--items);
-width: 360px;
-height: 420px;
-border: 1px solid #E7E9FC;
-padding: 32px 16px;
+  flex-basis: calc((100% - var(--indent) * (var(--items) -1)) / var(--items));
+  width: 360px;
+  height: 420px;
+  border: 1px solid #e7e9fc;
 }
 .portfolio-item {
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
 }
 /* Footer section styles */
 .footer-section {
@@ -330,13 +325,13 @@ padding: 32px 16px;
 .footer-section {
   height: 312px;
   display: flex;
-flex-direction: row;
-align-items: center;
+  flex-direction: row;
+  align-items: center;
   padding: 100px 0;
 }
 .logo-footer {
   margin-bottom: 16px;
-  display: inline-block; 
+  display: inline-block;
 }
 .footer-text {
   width: 264px;
