@@ -58,7 +58,7 @@ img {
   gap: 24px;
 }
 .about-list {
-  flex-basis: calc((100% - var(--indent) * (var(--items) -1)) / var(--items));
+  flex-basis: calc((100% - (var(--items) -1) * var(--indent)) / var(--items));
 }
 .link,
 .contacts {
@@ -129,8 +129,8 @@ button {
 /* Header styles */
 .nav-list {
   width: 261px;
-  height: 24px;
-  margin: 24px 0;
+
+  padding: 24px 0;
   gap: 40px;
 }
 .nav-menu {
@@ -144,6 +144,9 @@ button {
 .nav-menu:hover,
 .nav-menu:focus {
   color: var(--color-ocean);
+}
+.contacts-list {
+  gap: 40px;
 }
 .contacts-link {
   color: var(--main-color-slate);
@@ -221,6 +224,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
+  gap: 24px;
   row-gap: 48px;
 }
 .team-list {
@@ -297,7 +301,7 @@ button {
   flex-basis: calc((100% - var(--indent) * (var(--items) -1)) / var(--items));
   width: 360px;
   height: 420px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--color-cornflower);
 }
 .portfolio-item {
   padding: 32px 16px;
