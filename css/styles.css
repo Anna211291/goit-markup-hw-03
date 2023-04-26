@@ -71,7 +71,6 @@ button {
 }
 .header-section {
   border-bottom: 1px solid var(--color-cornflower);
-  height: 72px;
 }
 .heder-container {
   display: flex;
@@ -91,7 +90,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
-  width: 115px;
+
   padding: 24px 0;
   margin-right: 76px;
 }
@@ -128,8 +127,6 @@ button {
 }
 /* Header styles */
 .nav-list {
-  width: 261px;
-
   gap: 40px;
 }
 .nav-menu {
@@ -147,6 +144,8 @@ button {
 }
 .contacts-list {
   gap: 40px;
+  padding: 24px 0;
+  margin-left: 332px;
 }
 .contacts-link {
   color: var(--main-color-slate);
@@ -155,16 +154,7 @@ button {
 .contacts-link:focus {
   color: var(--color-ocean);
 }
-.mail {
-  width: 153px;
-  height: 24px;
-  margin: 24px 0 24px 332px;
-}
-.phone {
-  width: 151px;
-  height: 24px;
-  margin: 24px 0 24px 40px;
-}
+
 /* Hero section styles */
 .hero {
   background-color: var(--color-navy-blue);
@@ -212,7 +202,14 @@ button {
 .section {
   padding: 120px 0;
 }
+.not-visible {
+  visibility: hidden;
+}
+
 /* Gallery section styles */
+.gallery-section {
+  padding-top: 0;
+}
 
 /* Team section styles */
 .team-section {
@@ -231,14 +228,14 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   padding: 0px 0px 32px;
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-basis: calc((100% - var(--indent) * (var(--items) -1)) / var(--items));
 }
 
 .team-information {
-  padding: 32px 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
 }
 
@@ -272,13 +269,6 @@ button {
   background: var(--color-ocean);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-
-  text-align: center;
-  letter-spacing: 0.04em;
 
   color: var(--color-white);
   cursor: pointer;
@@ -329,10 +319,6 @@ button {
   color: var(--color-cloud);
 }
 .footer-section {
-  height: 312px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 100px 0;
 }
 .logo-footer {
