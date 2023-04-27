@@ -64,6 +64,7 @@ img {
 .contacts {
   text-decoration: none;
   font-style: normal;
+  margin-left: auto;
 }
 button {
   cursor: pointer;
@@ -144,7 +145,6 @@ button {
 .contacts-list {
   gap: 40px;
   padding: 24px 0;
-  margin-left: 332px;
 }
 .contacts-link {
   color: var(--main-color-slate);
